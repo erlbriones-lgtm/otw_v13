@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Valonik';
+  src: url('/font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('./Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/font/ValonikPersonalUse-Bold.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Valonik';
+  src: url('/font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('./Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/font/ValonikPersonalUse-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Valonik';
+  src: url('/font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('./Font/ValonikPersonalUse-Bold.otf') format('opentype'),
+       url('/font/ValonikPersonalUse-Bold.otf');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Comic Helvetic';
+  src: url('/font/ComicHelvetic_Light.otf') format('opentype'),
+       url('/Font/ComicHelvetic_Light.otf') format('opentype'),
+       url('./Font/ComicHelvetic_Light.otf') format('opentype'),
+       url('/font/ComicHelvetic_Light.otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cranio';
+  src: url('/Font/Cranio.otf') format('opentype'),
+       url('/public/Font/Cranio.otf') format('opentype'),
+       url('./Font/Cranio.otf') format('opentype'),
+       url('/font/Cranio.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cranio';
+  src: url('/Font/Cranio.otf') format('opentype'),
+       url('/public/Font/Cranio.otf') format('opentype'),
+       url('./Font/Cranio.otf') format('opentype'),
+       url('/font/Cranio.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moderniz';
+  src: url('/Font/Moderniz.otf') format('opentype'),
+       url('/public/Font/Moderniz.otf') format('opentype'),
+       url('./Font/Moderniz.otf') format('opentype'),
+       url('/font/Moderniz.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Moderniz';
+  src: url('/Font/Moderniz.otf') format('opentype'),
+       url('/public/Font/Moderniz.otf') format('opentype'),
+       url('./Font/Moderniz.otf') format('opentype'),
+       url('/font/Moderniz.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-jakarta: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-display: "Cranio", "Valonik", "Plus Jakarta Sans", sans-serif;
+  --font-moderniz: "Moderniz", "Plus Jakarta Sans", sans-serif;
+  --font-curvy: "Dancing Script", "Playfair Display", cursive;
+  --font-serif: "Playfair Display", serif;
+  --font-serif-italic: "Playfair Display", serif;
+  --font-comic: "Comic Helvetic", "Plus Jakarta Sans", sans-serif;
+  --font-comicsans: "Comic Sans MS", "Comic Sans", cursive;
+  --animate-marquee-left: marquee-left 40s linear infinite;
+  --animate-marquee-right: marquee-right 40s linear infinite;
+  --animate-marquee-up: marquee-up 35s linear infinite;
+  --animate-marquee-down: marquee-down 35s linear infinite;
+
+  @keyframes marquee-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes marquee-right {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes marquee-up {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+
+  @keyframes marquee-down {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+.hover-pause:hover .animate-marquee-left,
+.hover-pause:hover .animate-marquee-right,
+.hover-pause:hover .animate-marquee-up,
+.hover-pause:hover .animate-marquee-down {
+  animation-play-state: paused;
+}

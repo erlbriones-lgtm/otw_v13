@@ -1,0 +1,8 @@
+{
+  "name": "Tagbilaran City Tourism Portal",
+  "description": "An immersive, content-rich heritage and tourism application for Tagbilaran City, featuring Sikatuna AI heritage companion guide, cultural audio files scanner, and historical timeline chronicles.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
